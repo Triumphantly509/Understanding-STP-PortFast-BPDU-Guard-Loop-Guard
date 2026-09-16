@@ -25,18 +25,40 @@ In this topology, however, there are redundant links even if one fails, frames c
   <img width="529" height="250" alt="image" src="https://github.com/user-attachments/assets/f779a2a0-f99a-4a73-95e4-7d3bc39bd72a" />
 </div>
 
-##Without STP
+##Without STP, there are issues that can destroy your network.
 
-- Broadcast storms – broadcast frames circulate endlessly.
-- MAC address table instability – switches constantly relearn MAC addresses on different ports.
-- Multiple frame copies – the same frame is received multiple times.
+- Broadcast storms – (Due to the flooding of broadcast and unknown unicast frames to the LAN)
+  
+- MAC address table instability – (switches constantly relearn MAC addresses on different ports.)
+  
+- Multiple frame copies – (the same frame is received multiple times.)
+
+## This is the reason why that STP is used to prevent loops, set ports on forwarding or blocking ...
+
+## For now let's focus on STP IEEE 802.1D
 
 ## How does STP work
 
-Let's take this topology as an example:
+Referring to this topology as an example:
 
 <div>
-  
+  <img width="394" height="218" alt="image" src="https://github.com/user-attachments/assets/1fe42111-bab8-41d9-8f98-968b066dec34" />
 </div>
+
+- I use only switches because, PCs and Routers do not use, STP, Hello BPDUs..., except switches.
+-  Any enabled switch share a Hello BPDU to one another every 2 seconds, that's how a switch knows that other switches are still operational.
+-  If all the switches were not linked to each other, there won't be any loops, so no STP would be needed.
+-  Bridge = Switch
+  
+## Root bridge election
+- The lowest root ID bridge will become the Root bridge (By default the Mac-address is used as the tie-breaker.)
+- All the root bridges ports will be in Forwarding state
+- Other switches in the topology must have a path to reach the root bridge.
+
+<div>
+  <img width="460" height="170" alt="image" src="https://github.com/user-attachments/assets/3120ea28-27a3-48ed-b342-eb032afd138f" />
+</div>
+
+
 
 
