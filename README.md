@@ -50,7 +50,7 @@ Referring to this topology as an example:
 -  If all the switches were not linked to each other, there won't be any loops, so no STP would be needed.
 -  Bridge = Switch
   
-## Root bridge election
+## Part one - Root bridge election
 - The lowest root ID bridge will become the Root bridge (By default the Mac-address is used as the tie-breaker.)
 - All the root bridges ports will be in Forwarding state
 - Other switches in the topology must have a path to reach the root bridge.
@@ -59,6 +59,41 @@ Referring to this topology as an example:
   <img width="460" height="170" alt="image" src="https://github.com/user-attachments/assets/3120ea28-27a3-48ed-b342-eb032afd138f" />
 </div>
 
+## Cisco switches use a version of STP called PVST (Per-VLAN Spanning Tree) PVST runs a separate STP instance in each VLAN, on each vlan diffrent interfaces can be FW/BLK.
+- Bridge ID is an increment of 4096
+- The lowest value can be 0
+- The highest can be 61440
+- The bridge ID value can be the sum (4096 + the VLAn ID)
+
+## This is how to know the VLAN ID
+- The default VLAN ID is 1.
+<div>
+  <img width="434" height="143" alt="image" src="https://github.com/user-attachments/assets/810bcd24-d5ff-449a-baeb-3f4e1e8da8e0" />
+</div>
+
+## Answer these questions, which switch will be the Root bridge.
+## Example 1
+<div>
+  
+</div>
+## Example 2
+<div>
+  
+</div>
+
+## Example 3
+<div>
+  
+</div>
+
+## Part two - Interfaces to be Root Port
+- Interfaces with the lowest root cost is the root port
+
+## Root cost
+- 10 Mbps = 100
+- 100 Mbps = 19
+- 1 Gbps = 4
+- 10 Gbps = 2
 
 
 
