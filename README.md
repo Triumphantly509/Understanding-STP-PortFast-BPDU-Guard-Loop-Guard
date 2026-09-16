@@ -62,8 +62,10 @@ Referring to this topology as an example:
 ## Cisco switches use a version of STP called PVST (Per-VLAN Spanning Tree) PVST runs a separate STP instance in each VLAN, on each vlan diffrent interfaces can be FW/BLK.
 - Bridge ID is an increment of 4096
 - The lowest value can be 0
-- The highest can be 61440
-- The bridge ID value can be the sum (4096 + the VLAn ID)
+- The valid values: 0, 4096, 8192, 12288, 16384, 20480, 24576, 28672, 32768
+- 36864, 40960, 45056, 49152, 53248, 57344, or 61440
+- The bridge ID value can be the sum (32768 + the VLAn ID)
+- 32768 + 1 (Default Vlan ID) = 32769
 
 ## This is how to know the VLAN ID
 
@@ -80,7 +82,7 @@ Referring to this topology as an example:
 </div>
 ## Example 2
 <div>
-  
+  <img width="725" height="465" alt="image" src="https://github.com/user-attachments/assets/23ca210c-6fee-4ce7-bec6-dffbbefa87c0" />
 </div>
 
 ## Example 3
