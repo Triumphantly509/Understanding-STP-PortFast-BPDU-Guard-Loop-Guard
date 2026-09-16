@@ -78,7 +78,7 @@ Referring to this topology as an example:
 ## Answer these questions, which switch will be the Root bridge.
 ## Example 1
 <div>
-  
+  <img width="876" height="452" alt="image" src="https://github.com/user-attachments/assets/3fe96d5f-b838-4390-ba12-302b23942cf5" />
 </div>
 ## Example 2
 <div>
@@ -87,7 +87,7 @@ Referring to this topology as an example:
 
 ## Example 3
 <div>
-  
+  <img width="882" height="469" alt="image" src="https://github.com/user-attachments/assets/9e12ecdd-ae29-45c0-a085-f57995c479f5" />
 </div>
 
 ## Part two - Each remaining SW in the topology will select one of its interfaces to be Root Port.
