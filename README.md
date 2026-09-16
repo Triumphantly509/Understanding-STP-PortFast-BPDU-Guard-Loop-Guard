@@ -66,10 +66,12 @@ Referring to this topology as an example:
 - The bridge ID value can be the sum (4096 + the VLAn ID)
 
 ## This is how to know the VLAN ID
-- The default VLAN ID is 1.
+
 <div>
   <img width="434" height="143" alt="image" src="https://github.com/user-attachments/assets/810bcd24-d5ff-449a-baeb-3f4e1e8da8e0" />
 </div>
+
+- The default VLAN ID is 1.
 
 ## Answer these questions, which switch will be the Root bridge.
 ## Example 1
@@ -86,7 +88,7 @@ Referring to this topology as an example:
   
 </div>
 
-## Part two - Interfaces to be Root Port
+## Part two - Each remaining SW in the topology will select one of its interfaces to be Root Port.
 - Interfaces with the lowest root cost is the root port
 
 ## Root cost
@@ -94,6 +96,21 @@ Referring to this topology as an example:
 - 100 Mbps = 19
 - 1 Gbps = 4
 - 10 Gbps = 2
+
+## Which port will be the Root port on each switch that is not the root bridge?
+- Example
+<div>
+  
+</div>
+
+## Part two - What if a switch has multiple ports with the same Root Cost?
+- Lowest neighor bridge ID
+
+## Example
+<div>
+  
+</div>
+
 
 
 
