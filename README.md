@@ -190,3 +190,13 @@ Referring to this topology as an example:
 <div>
   <img width="744" height="365" alt="image" src="https://github.com/user-attachments/assets/f17d8a7d-f6d7-4674-8896-7b7bbc591c9c" />
 </div>
+
+- Sw3 is elected root bridge because it has the lowest Mac address.
+- Sw2 via Gig 1/01 is the root port, as well as sw 0 via Gig 1/0/1.
+- Sw1 has 2 connections with Sw 0 having the same root cost each.
+- To determine the root port on SW 1, the lowest neighbor port Id should be used as the tiebreaker.
+- sw 0 is the neighbor, let's verify the port ID values
+
+<div>
+  <img width="618" height="301" alt="image" src="https://github.com/user-attachments/assets/6602792d-23bf-4f4f-b5e7-891251ccac4b" />
+</div>
