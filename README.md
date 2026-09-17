@@ -188,5 +188,5 @@ Referring to this topology as an example:
 ## Explanations
 
 <div>
-  <img width="635" height="305" alt="image" src="https://github.com/user-attachments/assets/1d396b66-01cb-46e4-ac5d-19eac2cf551e" />
+  <img width="744" height="365" alt="image" src="https://github.com/user-attachments/assets/f17d8a7d-f6d7-4674-8896-7b7bbc591c9c" />
 </div>
