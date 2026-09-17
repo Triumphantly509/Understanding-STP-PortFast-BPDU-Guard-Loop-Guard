@@ -206,3 +206,7 @@ Referring to this topology as an example:
 - to determine which port to block between Gig1/0/3 on switch 1 and Gig1/0/3 on switch 0.
 - Ask who has lower root path cost? sw0 has 4, sw 1 has 8, the lowest one is the designated port Gig 1/0/3 on switch 0 and Gig 1/0/3 is blocked.
 - Repeat the same process with switch 1 and switch 2. switch 2 has the lowest root path cost, interface Gig1/0/2 is designated port and Gig 1/0/1 on switch 1 is blocked.
+
+  <div>
+    <img width="794" height="351" alt="image" src="https://github.com/user-attachments/assets/0f5a406c-22f4-4081-bef8-7223a77c924e" />
+  </div>
