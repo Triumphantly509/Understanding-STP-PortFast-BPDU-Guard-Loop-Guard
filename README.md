@@ -126,7 +126,7 @@ Referring to this topology as an example:
 </div>
 
 - On switch 3, interface Gig1/0/2 is the root port, because its root cost is 4, however from interface Gig 1/0/1 it is 8.
-- Interface Gig 1/01 is blocked, but interface Gig 1/0/2 from Sw 2 is Designated port.
+- Interface Gig 1/01 is blocked.
 ## Switch 3
 <div>
   <img width="632" height="307" alt="image" src="https://github.com/user-attachments/assets/30ee2055-e3bf-49e2-8d89-2f7df14d1f23" />
