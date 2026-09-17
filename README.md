@@ -134,11 +134,12 @@ Referring to this topology as an example:
 
 
 ## Part two - What if a switch has multiple ports with the same Root Cost?
+- Lowest root cost
 - Lowest neighor bridge ID
 
 ## Example
 <div>
-  
+  <img width="650" height="433" alt="image" src="https://github.com/user-attachments/assets/11e7a5f2-ef0d-474b-969e-b5d7b39b6953" />
 </div>
 
 
