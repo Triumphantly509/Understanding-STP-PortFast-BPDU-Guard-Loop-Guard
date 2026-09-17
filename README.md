@@ -200,3 +200,9 @@ Referring to this topology as an example:
 <div>
   <img width="618" height="301" alt="image" src="https://github.com/user-attachments/assets/6602792d-23bf-4f4f-b5e7-891251ccac4b" />
 </div>
+
+- interface Gig1/0/2 on switch 0 has lower value compare to Gig1/0/3
+- Therefore, int Gig 1/0/2 on switch 1 is the root port and Gig1/0/2 is the designated port
+- to determine which port to block between Gig1/0/3 on switch 1 and Gig1/0/3 on switch 0.
+- Ask who has lower root path cost? sw0 has 4, sw 1 has 8, the lowest one is the designated port Gig 1/0/3 on switch 0 and Gig 1/0/3 is blocked.
+- Repeat the same process with switch 1 and switch 2. switch 2 has the lowest root path cost, interface Gig1/0/2 is designated port and Gig 1/0/1 on switch 1 is blocked.
