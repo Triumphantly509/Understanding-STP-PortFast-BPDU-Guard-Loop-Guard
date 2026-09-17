@@ -15,8 +15,6 @@ In other words, there won't be internet connection, which is critical for busine
   <img width="563" height="238" alt="image" src="https://github.com/user-attachments/assets/bad488a1-575a-4f87-89b2-c35e08241f78" />
 </div>
 
-Photo credit @Jeremy's IT lab
-
 ## Well designed network (with redundancy)
 
 In this topology, however, there are redundant links even if one fails, frames can still be sent by choosing another path.
@@ -24,6 +22,8 @@ In this topology, however, there are redundant links even if one fails, frames c
 <div>
   <img width="529" height="250" alt="image" src="https://github.com/user-attachments/assets/f779a2a0-f99a-4a73-95e4-7d3bc39bd72a" />
 </div>
+
+Photos credit @Jeremy's IT lab
 
 ##Without STP, there are issues that can destroy your network.
 
