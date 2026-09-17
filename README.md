@@ -102,7 +102,7 @@ Referring to this topology as an example:
 ## Which port will be the Root port on each switch that is not the root bridge?
 - Example
 <div>
-  
+  <img width="748" height="399" alt="image" src="https://github.com/user-attachments/assets/ea4d7504-fb2a-483a-8c9b-ca91a6e60d51" />
 </div>
 
 ## Part two - What if a switch has multiple ports with the same Root Cost?
