@@ -184,3 +184,9 @@ Referring to this topology as an example:
 <div>
   <img width="744" height="365" alt="image" src="https://github.com/user-attachments/assets/36130f0b-dbda-4eee-be8e-3c6cf5cbea0a" />
 </div>
+
+## Explanations
+
+<div>
+  <img width="635" height="305" alt="image" src="https://github.com/user-attachments/assets/1d396b66-01cb-46e4-ac5d-19eac2cf551e" />
+</div>
