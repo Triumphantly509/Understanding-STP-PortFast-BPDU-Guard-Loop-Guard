@@ -90,7 +90,7 @@ Referring to this topology as an example:
   <img width="882" height="469" alt="image" src="https://github.com/user-attachments/assets/9e12ecdd-ae29-45c0-a085-f57995c479f5" />
 </div>
 
-## Part two - Each remaining SW in the topology will select one of its interfaces to be Root Port.
+## Part two - 1 - Each remaining SW in the topology will select one of its interfaces to be Root Port.
 - Interfaces with the lowest root cost is the root port
 
 ## Root cost
@@ -133,7 +133,7 @@ Referring to this topology as an example:
 </div>
 
 
-## Part two - What if a switch has multiple ports with the same Root Cost?
+## Part two - 2 - What if a switch has multiple ports with the same Root Cost?
 - Lowest root cost
 - Lowest neighbor bridge ID / lowest Mac address
 
@@ -176,5 +176,11 @@ Referring to this topology as an example:
 - To decide which port will be blocked or designated between switch 0 and switch 11.
 - Ask who has the lower root path cost. switch 11 to reach the root bridge, its root path cost is 4, switch 0 root path cost is 8.
 - As a result, Gig 1/0/2 on switch 11 is Designated port, Gig 1/0/2 on switch 0 is blocked by STP.
+  
+## Part two - 3 - What if 2 switches have 2 connections between them, both Root cost and neighbor bridge ID are the same?
 
+- Lowest neighbor port ID
 
+<div>
+  <img width="744" height="365" alt="image" src="https://github.com/user-attachments/assets/36130f0b-dbda-4eee-be8e-3c6cf5cbea0a" />
+</div>
