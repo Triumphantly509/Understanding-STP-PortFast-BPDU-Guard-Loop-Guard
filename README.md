@@ -135,17 +135,46 @@ Referring to this topology as an example:
 
 ## Part two - What if a switch has multiple ports with the same Root Cost?
 - Lowest root cost
-- Lowest neighor bridge ID
+- Lowest neighbor bridge ID
 
 ## Example
 <div>
   <img width="650" height="433" alt="image" src="https://github.com/user-attachments/assets/11e7a5f2-ef0d-474b-969e-b5d7b39b6953" />
 </div>
 
-## Result
+## Result and explanation
 <div>
   <img width="673" height="382" alt="image" src="https://github.com/user-attachments/assets/1e103f62-3aa3-4e3d-86c9-c065007c8f5b" />
 </div>
 
+- Switch 12 is the root bridge, while all the BID are the same, the tiebreaker is the lowest mac address. As a result, its interfaces are Designated Ports.
+  <div>
+    <img width="632" height="288" alt="image" src="https://github.com/user-attachments/assets/ff5b8654-fdac-425d-80ed-10b2b7682bd1" />
+  </div>
+
+- On switch 14, interface Gig 1/0/1 is the root port because its root cost is just 4.
+
+ <div>
+  <img width="632" height="306" alt="image" src="https://github.com/user-attachments/assets/95ecaece-7e86-4131-8749-b233fa0e4300" />
+</div>
+
+- On switch 11, interface Gig 1/0/1 is the root port as well, because it also has 4 as root cost.
+
+  <div>
+    <img width="631" height="306" alt="image" src="https://github.com/user-attachments/assets/ebdad252-600d-49a3-8863-1053e3e8916b" />
+  </div>
+  
+- On switch 0, however the switch has 2 ports with same root cost, 8.
+- 2 solutions possible: lowest neighbor bridge ID / lowest Mac address.
+- Switch 14 and switch 11 have the same bridge ID but switch 14 has the lowest Mac address.
+- The best path to the root bridge from SW0 is Gig 1/0/1, sw14, the root bridge.
+
+<div>
+  <img width="641" height="308" alt="image" src="https://github.com/user-attachments/assets/59ab23b1-0ec0-4327-b295-194e44a4f9cc" />
+</div>
+
+- To decide which port will be blocked or designated between switch 0 and switch 11.
+- Ask who has the lower root path cost. switch 11 to reach the root bridge, its root path cost is 4, switch 0 root path cost is 8.
+- As a result, Gig 1/0/2 on switch 11 is a Designated port, Gig 1/0/2 on switch 0 is blocked by STP.
 
 
