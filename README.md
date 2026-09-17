@@ -135,7 +135,7 @@ Referring to this topology as an example:
 
 ## Part two - What if a switch has multiple ports with the same Root Cost?
 - Lowest root cost
-- Lowest neighbor bridge ID
+- Lowest neighbor bridge ID / lowest Mac address
 
 ## Example
 <div>
@@ -164,7 +164,7 @@ Referring to this topology as an example:
     <img width="631" height="306" alt="image" src="https://github.com/user-attachments/assets/ebdad252-600d-49a3-8863-1053e3e8916b" />
   </div>
   
-- On switch 0, however the switch has 2 ports with same root cost, 8.
+- On switch 0, however the switch has 2 ports with same root path cost, 8.
 - 2 solutions possible: lowest neighbor bridge ID / lowest Mac address.
 - Switch 14 and switch 11 have the same bridge ID but switch 14 has the lowest Mac address.
 - The best path to the root bridge from SW0 is Gig 1/0/1, sw14, the root bridge.
@@ -175,6 +175,6 @@ Referring to this topology as an example:
 
 - To decide which port will be blocked or designated between switch 0 and switch 11.
 - Ask who has the lower root path cost. switch 11 to reach the root bridge, its root path cost is 4, switch 0 root path cost is 8.
-- As a result, Gig 1/0/2 on switch 11 is a Designated port, Gig 1/0/2 on switch 0 is blocked by STP.
+- As a result, Gig 1/0/2 on switch 11 is Designated port, Gig 1/0/2 on switch 0 is blocked by STP.
 
 
