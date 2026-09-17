@@ -119,7 +119,7 @@ Referring to this topology as an example:
   <img width="723" height="371" alt="image" src="https://github.com/user-attachments/assets/f351dc70-a4d8-467d-aed3-65f20f38e5e2" />
 </div>
 
-- On Sw 2, interface Gig1/0/1 is the Root Port, 0 + 4 = 4, (lowest root cost). From interface Gig1/0/2, the root cost is 4 + 4 = 8.
+- On Sw 2, interface Gig1/0/1 is the Root Port, 0 + 4 = 4, (lowest root cost), but from interface Gig1/0/2, the root cost is 4 + 4 = 8, it is just a Designated port.
 ## Switch 2
 <div>
   <img width="630" height="309" alt="image" src="https://github.com/user-attachments/assets/f7e5c40b-063a-44cd-aae4-5080326ebfb1" />
