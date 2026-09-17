@@ -112,7 +112,8 @@ Referring to this topology as an example:
 
 ## Visualize the result from each separate switch.
 
-- Switch 1 is the Root bridge, because it has the lowest Mac address.
+- Switch 1 is the Root bridge, because it has the lowest Mac address. (All the root bridges ports will be in Forwarding state)
+  
 ## Switch 1
 <div>
   <img width="723" height="371" alt="image" src="https://github.com/user-attachments/assets/f351dc70-a4d8-467d-aed3-65f20f38e5e2" />
