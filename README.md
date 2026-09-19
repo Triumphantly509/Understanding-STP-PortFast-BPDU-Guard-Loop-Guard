@@ -237,6 +237,12 @@ Referring to this topology as an example:
 
 ## How to enable BPDU Guard
 
+## To enable enable a port that was disabled by BPDU Guard
+
 ## How to verify
+
+## Root Guard
+
+## Loop Guard
 
 
