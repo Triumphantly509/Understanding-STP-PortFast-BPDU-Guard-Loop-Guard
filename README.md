@@ -210,3 +210,10 @@ Referring to this topology as an example:
   <div>
     <img width="794" height="351" alt="image" src="https://github.com/user-attachments/assets/0f5a406c-22f4-4081-bef8-7223a77c924e" />
   </div>
+
+  ## STP ports state Review
+  <div>
+    <img width="1295" height="572" alt="image" src="https://github.com/user-attachments/assets/2e50f725-0a2e-47a6-a53d-c8dd07acc2db" />
+  </div>
+
+  - Jeremy's IT lab photo
