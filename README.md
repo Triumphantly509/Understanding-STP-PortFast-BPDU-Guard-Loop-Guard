@@ -222,3 +222,21 @@ Referring to this topology as an example:
   </div>
 
   - Jeremy's IT lab photo
+ 
+## Port Fast
+- Portfast allows a port to move immediately to the Forwarding state, bypassing Listening and Learning.
+- If used, it must be enabled only on ports connected to end hosts.
+- If enabled on a port connected to another switch it could cause a layer 2 loop.
+
+## Enabling PortFast on all access ports (not trunk ports)
+
+## How to verify
+
+## BPDU Guard
+- If an interface with BPDU Guard enabled receives a BPDU from another switch, the interface will be shut down to prevent a loo from forming.
+
+## How to enable BPDU Guard
+
+## How to verify
+
+
