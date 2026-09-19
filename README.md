@@ -216,4 +216,9 @@ Referring to this topology as an example:
     <img width="1295" height="572" alt="image" src="https://github.com/user-attachments/assets/2e50f725-0a2e-47a6-a53d-c8dd07acc2db" />
   </div>
 
+  ## STP Timer
+  <div>
+    <img width="1183" height="541" alt="image" src="https://github.com/user-attachments/assets/31b72615-9513-4cc9-b12c-415000accdfc" />
+  </div>
+
   - Jeremy's IT lab photo
