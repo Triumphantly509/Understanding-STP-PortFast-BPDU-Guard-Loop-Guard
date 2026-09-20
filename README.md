@@ -267,12 +267,39 @@ Referring to this topology as an example:
   <img width="628" height="291" alt="image" src="https://github.com/user-attachments/assets/b3e9eb1d-0767-4717-92b2-6bd88dfda11d" />
 </div>
 
-## Enabling PortFast on all access ports (not trunk ports)
+## Enabling PortFast on all access ports (not trunk ports) (on the 2 access switches)
+- Because when connecting a PC on the switch, It won't have access right away.
+- Portfast can fix this issue by bypassing the learning and listening phase.
+
+- Switch 0
+<div>
+  <img width="626" height="295" alt="image" src="https://github.com/user-attachments/assets/3d3138d5-07dd-4f34-b68a-ed10681869ad" />
+</div>
+
+## BPDU Guard
+- If an interface with BPDU Guard enabled receives a BPDU from another switch, the interface will be shut down to prevent a loop from forming.
+
+<div>
+  <img width="630" height="219" alt="image" src="https://github.com/user-attachments/assets/acceed9c-fac5-40c3-8fa3-8e4c8ca8bff9" />
+</div>
+
+
+## Notice .... Only interfaces where PCs are connected to the switch that Portfast and BPDU Guard should be activated.
+-we need to remove portfast on the interfaces connected to the switches.
+
+<div>
+  
+</div>
+
+- Switch 2
+
+<div>
+  
+</div>
 
 ## How to verify
 
-## BPDU Guard
-- If an interface with BPDU Guard enabled receives a BPDU from another switch, the interface will be shut down to prevent a loo from forming.
+
 
 ## How to enable BPDU Guard
 
