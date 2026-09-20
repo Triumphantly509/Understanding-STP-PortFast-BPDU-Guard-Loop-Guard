@@ -228,6 +228,38 @@ Referring to this topology as an example:
 - If used, it must be enabled only on ports connected to end hosts.
 - If enabled on a port connected to another switch it could cause a layer 2 loop.
 
+## Consider this diagram
+
+<div>
+  <img width="841" height="404" alt="image" src="https://github.com/user-attachments/assets/fa83ee6d-80e9-4445-a02e-e36ea6f409af" />
+</div>
+
+## Enable RPVST on all the switches like this
+<div>
+  <img width="635" height="138" alt="image" src="https://github.com/user-attachments/assets/34da5b8f-dd2a-41b5-afc0-11dcf09ec222" />
+</div>
+
+## Verify which switch is the root bridge
+- Switch 2 is the Root bridge
+<div>
+  <img width="632" height="322" alt="image" src="https://github.com/user-attachments/assets/a9c773d9-33fe-42ed-ac1c-fc2b43506c62" />
+</div>
+
+## Let's make switch 1 the root bridge
+<div>
+  <img width="632" height="193" alt="image" src="https://github.com/user-attachments/assets/84302c3a-9d4a-4d9d-8207-dadea1e88ae3" />
+</div>
+
+## Let's configure switch 0 as secondary bridge
+<div>
+  <img width="630" height="280" alt="image" src="https://github.com/user-attachments/assets/1c16bfc9-dcaf-45c9-83b4-72291db5fa49" />
+</div>
+
+## Let's configure switch 2 as secondary bridge as well
+<div>
+  <img width="621" height="238" alt="image" src="https://github.com/user-attachments/assets/376b9660-4eab-4335-ba5b-8636bbaf80cb" />
+</div>
+
 ## Enabling PortFast on all access ports (not trunk ports)
 
 ## How to verify
