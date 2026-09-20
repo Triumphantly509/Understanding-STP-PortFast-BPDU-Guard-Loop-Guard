@@ -260,6 +260,13 @@ Referring to this topology as an example:
   <img width="621" height="238" alt="image" src="https://github.com/user-attachments/assets/376b9660-4eab-4335-ba5b-8636bbaf80cb" />
 </div>
 
+## Result
+- Switch 1 is in fact the root bridge
+
+<div>
+  <img width="628" height="291" alt="image" src="https://github.com/user-attachments/assets/b3e9eb1d-0767-4717-92b2-6bd88dfda11d" />
+</div>
+
 ## Enabling PortFast on all access ports (not trunk ports)
 
 ## How to verify
