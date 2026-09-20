@@ -197,9 +197,9 @@ Referring to this topology as an example:
 - To determine the root port on SW 1, the lowest neighbor port Id should be used as the tiebreaker.
 - sw 0 is the neighbor, let's verify the port ID values
 
-<div>
+<!-- <div>
   <img width="618" height="301" alt="image" src="https://github.com/user-attachments/assets/6602792d-23bf-4f4f-b5e7-891251ccac4b" />
-</div>
+</div> -->
 
 - interface Gig1/0/2 on switch 0 has lower value compare to Gig1/0/3
 - Therefore, int Gig 1/0/2 on switch 1 is the root port and Gig1/0/2 is the designated port
